@@ -45,7 +45,7 @@ body {
 }
 
 .content h2 {
-    font-size: var(--font-size-large);
+    font-size: 1rem;
     padding: 0.625rem;
     color: var(--white-color);
     font-weight: bold;
@@ -147,8 +147,8 @@ body {
 }
 
 .button {
-    --color-1: #0dff00;
-    --color-2: #0dff00;
+    --color-1: #009400;
+    --color-2: #009400;
     --color-1-shadow: #fffffc23;
     --color-2-shadow: #fcfcfc23;
     --color-1-shadow-focus: #e5fb6a67;
@@ -165,7 +165,7 @@ body {
         -0.25rem -0.25rem 1rem 0.5rem var(--color-1-shadow),
         0.25rem 0.25rem 1rem 0.5rem var(--color-2-shadow);
     transition: all 0.3s cubic-bezier(0.6, 0.12, 0.39, 0.83);
-    color: var(--white-color);
+    color: #ffffff;
 }
 
 .button:hover,
