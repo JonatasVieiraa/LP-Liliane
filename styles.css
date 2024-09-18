@@ -214,6 +214,19 @@ body {
     border-radius: 0.3125rem;
 }
 
+.divider {
+    height: 2px;
+    background-color: #ffffff;
+    border: none;
+    margin: 20px;
+}
+
+.rodape {
+    font-size: 12px;
+    color: #ffffff;
+    display: flex;
+}
+
 /* Media Queries */
 @media screen and (min-width: 481px) {
     body {
@@ -317,6 +330,77 @@ body {
     .icon-marquee .icon img:hover {
         transform: scale(1.1);
         /* Efeito de aumento ao passar o mouse */
+    }
+
+    .rodape {
+        font-size: 18px;
+        color: #ffffff;
+        display: flex;
+        justify-self: center;
+    }
+}
+@media screen and (min-width: 1440px) {
+    body {
+        padding: 2.5rem;
+    }
+
+    .img {
+        width: 18.75rem;
+    }
+
+    .content h2,
+    .content .cta-text {
+        font-size: 3rem;
+    }
+
+    .video-container {
+        max-width: 43.75rem;
+    }
+
+    .button {
+        font-size: 1.25rem;
+    }
+
+    /* Ajustes para o carrossel de ícones em telas maiores */
+    .icon-marquee-container {
+        width: 100%;
+        max-width: 75rem;
+        /* Aumenta a largura máxima do contêiner */
+        margin: 0 auto;
+        /* Centraliza o contêiner */
+    }
+
+    .icon-marquee {
+        display: flex;
+        justify-content: space-around;
+        /* Distribui os ícones uniformemente */
+        padding: 1rem 0;
+        /* Adiciona algum espaço vertical */
+    }
+
+    .icon-marquee .icon {
+        margin: 0 1rem;
+        /* Aumenta o espaço entre os ícones */
+    }
+
+    .icon-marquee .icon img {
+        width: 5rem;
+        /* Aumenta o tamanho dos ícones */
+        height: 5rem;
+        transition: transform 0.3s ease;
+        /* Adiciona uma transição suave para hover */
+    }
+
+    .icon-marquee .icon img:hover {
+        transform: scale(1.1);
+        /* Efeito de aumento ao passar o mouse */
+    }
+
+    .rodape {
+        font-size: 26px;
+        color: #ffffff;
+        display: flex;
+        justify-self: center;
     }
 }
 
