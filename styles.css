@@ -45,7 +45,7 @@ body {
 }
 
 .content h2 {
-    font-size: var(--font-size-large);
+    font-size: 1rem;
     padding: 0.625rem;
     color: var(--white-color);
     font-weight: bold;
@@ -147,8 +147,8 @@ body {
 }
 
 .button {
-    --color-1: #0dff00;
-    --color-2: #0dff00;
+    --color-1: #009400;
+    --color-2: #009400;
     --color-1-shadow: #fffffc23;
     --color-2-shadow: #fcfcfc23;
     --color-1-shadow-focus: #e5fb6a67;
@@ -165,7 +165,7 @@ body {
         -0.25rem -0.25rem 1rem 0.5rem var(--color-1-shadow),
         0.25rem 0.25rem 1rem 0.5rem var(--color-2-shadow);
     transition: all 0.3s cubic-bezier(0.6, 0.12, 0.39, 0.83);
-    color: var(--white-color);
+    color: #ffffff;
 }
 
 .button:hover,
@@ -212,6 +212,19 @@ body {
     width: 3.125rem;
     height: 3.125rem;
     border-radius: 0.3125rem;
+}
+
+.divider {
+    height: 2px;
+    background-color: #ffffff;
+    border: none;
+    margin: 20px;
+}
+
+.rodape {
+    font-size: 12px;
+    color: #ffffff;
+    display: flex;
 }
 
 /* Media Queries */
@@ -317,6 +330,77 @@ body {
     .icon-marquee .icon img:hover {
         transform: scale(1.1);
         /* Efeito de aumento ao passar o mouse */
+    }
+
+    .rodape {
+        font-size: 18px;
+        color: #ffffff;
+        display: flex;
+        justify-self: center;
+    }
+}
+@media screen and (min-width: 1440px) {
+    body {
+        padding: 2.5rem;
+    }
+
+    .img {
+        width: 18.75rem;
+    }
+
+    .content h2,
+    .content .cta-text {
+        font-size: 3rem;
+    }
+
+    .video-container {
+        max-width: 43.75rem;
+    }
+
+    .button {
+        font-size: 1.25rem;
+    }
+
+    /* Ajustes para o carrossel de ícones em telas maiores */
+    .icon-marquee-container {
+        width: 100%;
+        max-width: 75rem;
+        /* Aumenta a largura máxima do contêiner */
+        margin: 0 auto;
+        /* Centraliza o contêiner */
+    }
+
+    .icon-marquee {
+        display: flex;
+        justify-content: space-around;
+        /* Distribui os ícones uniformemente */
+        padding: 1rem 0;
+        /* Adiciona algum espaço vertical */
+    }
+
+    .icon-marquee .icon {
+        margin: 0 1rem;
+        /* Aumenta o espaço entre os ícones */
+    }
+
+    .icon-marquee .icon img {
+        width: 5rem;
+        /* Aumenta o tamanho dos ícones */
+        height: 5rem;
+        transition: transform 0.3s ease;
+        /* Adiciona uma transição suave para hover */
+    }
+
+    .icon-marquee .icon img:hover {
+        transform: scale(1.1);
+        /* Efeito de aumento ao passar o mouse */
+    }
+
+    .rodape {
+        font-size: 26px;
+        color: #ffffff;
+        display: flex;
+        justify-self: center;
     }
 }
 
